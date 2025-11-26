@@ -22,7 +22,7 @@ function Navbar() {
             </li>
           ))}
         </ul>
-        <time>{dayjs().format('ddd MMM D h:mm A')}</time>
+        <time>{dayjs().format("ddd MMM D h:mm A")}</time>
       </div>
     </nav>
   );
