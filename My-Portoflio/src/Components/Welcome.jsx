@@ -1,5 +1,6 @@
-import { useEffect, useRef } from "react";
+import {  useRef } from "react";
 import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 const FONT_WEIGHTS = {
   subtitle: { min: 100, max: 400, default: 100 },
   title: { min: 400, max: 900, default: 400 },
@@ -53,7 +54,7 @@ function Welcome() {
   const titleRef = useRef(null);
   const subtitleRef = useRef(null);
 
-  useEffect(() => {
+  useGSAP(() => {
     const titleCleanup = setupTextHover(titleRef.current, "title");
     const subtitleCleanup = setupTextHover(subtitleRef.current, "subtitle");
 
