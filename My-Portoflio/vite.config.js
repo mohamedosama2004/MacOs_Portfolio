@@ -13,20 +13,20 @@ export default defineConfig({
   resolve: {
     // force all imports of react/react-dom to use the project's node_modules copy
     alias: {
+      // Force single React copy everywhere
       react: resolve(rootNodeModules, "react"),
       "react-dom": resolve(rootNodeModules, "react-dom"),
-      // your existing aliases
+
+      // Your existing aliases
       "#components": resolve(root, "src/components"),
       "#constants": resolve(root, "src/constants"),
       "#store": resolve(root, "src/store"),
       "#hoc": resolve(root, "src/hoc"),
       "#windows": resolve(root, "src/windows"),
     },
-    // help Vite avoid bundling duplicate React copies
-    dedupe: ["react", "react-dom"],
+    dedupe: ["react", "react-dom"], // prevent duplicate bundling
   },
   optimizeDeps: {
-    // make sure Vite pre-bundles these to the same copy
     include: ["react", "react-dom"],
   },
 });
