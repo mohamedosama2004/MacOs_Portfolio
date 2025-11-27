@@ -7,7 +7,7 @@ import gsap from "gsap";
 import useWindowStore from "#store/window";
 
 function Dock() {
-    const {openWindow , closeWindow, focusWindow , windows }=useWindowStore();
+    const {openWindow , closeWindow,  windows }=useWindowStore();
   const dockref = useRef(null);
   useGSAP(() => {
     const dock = dockref.current;
