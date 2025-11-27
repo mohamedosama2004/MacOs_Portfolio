@@ -11,6 +11,7 @@ const rootNodeModules = resolve(root, "node_modules");
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   resolve: {
+    // force all imports of react/react-dom to use the project's node_modules copy
     alias: {
       // Force single React copy everywhere
       react: resolve(rootNodeModules, "react"),
