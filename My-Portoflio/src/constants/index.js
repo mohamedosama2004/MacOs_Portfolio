@@ -187,19 +187,19 @@ const photosLinks = [
 const gallery = [
   {
     id: 1,
-    img: "/images/gal1.png",
+    img: "/images/gal1.jpeg",
   },
   {
     id: 2,
-    img: "/images/gal2.png",
+    img: "/images/gal2.jpeg",
   },
   {
     id: 3,
-    img: "/images/gal3.png",
+    img: "/images/gal3.jpeg",
   },
   {
     id: 4,
-    img: "/images/gal4.png",
+    img: "/images/gal4.jpeg",
   },
 ];
 
@@ -228,7 +228,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5", // icon position inside Finder
-      windowPosition: "top-[5vh] left-5", // optional: Finder window position
+      windowPosition: "top-[15vh] left-25", // optional: Finder window position
       children: [
         {
           id: 1,
@@ -281,7 +281,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 right-70",
-      windowPosition: "top-[20vh] left-7",
+      windowPosition: "top-[60vh] left-73",
       children: [
         {
           id: 1,
@@ -332,7 +332,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-80",
-      windowPosition: "top-[33vh] left-7",
+      windowPosition: "top-[33vh] right-7",
       children: [
         {
           id: 1,
@@ -385,7 +385,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-50 left-70",
-      windowPosition: "top-[10vh] left-7",
+      windowPosition: "top-[10vh] right-7",
       children: [
         {
           id: 1,
