@@ -73,7 +73,7 @@ function Welcome() {
         )}
       </p>
       <h1 ref={titleRef} className="mt-7">
-        {rederText("Portfolio", "text-9xl italic font-georama")}
+        {rederText("Portfolio.", "text-9xl italic font-georama")}
       </h1>
       <div className="small-screen">
         <p>This Portfolio is designed for desktop / tablet screens only </p>
